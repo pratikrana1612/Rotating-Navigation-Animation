@@ -60,7 +60,7 @@ p{
     z-index: 3;
     top:-6rem;
     left:-6rem;
-    overflow: hidden;
+    overflow:hidden;
 }
 .circle .navbar{
     display:flex;
@@ -79,7 +79,7 @@ p{
     width:30px;
     height:5px;
     background-color: white;
-    transition: 0.5s linear;
+    transition: 0.3s linear;
 }
 .circle .navbar span:nth-of-type(1){
     width:15px;
@@ -92,25 +92,62 @@ p{
     transition-delay: 0.1s;
     margin-top:3px;
 }
-.circle .navbar:hover span:nth-of-type(2){
+.circle .toggle span:nth-of-type(2){
     transform: translateX(90px);
 }
-.circle .navbar:hover span:nth-of-type(1){
+.circle .toggle span:nth-of-type(1){
     transform: rotateZ(45deg);
     position:relative;
     top:5px;
     right:5px;
     width:50px;
 }
-.circle .navbar:hover span:nth-of-type(3){
+.circle .toggle span:nth-of-type(3){
     transform:rotateZ(310deg);
     position:relative;
     bottom:15px;
     right:5px;
     width:50px;
 }
-section:hover
+.rotate
 {
-    transform:translateY(-180px) translateX(116px) rotate(-20deg);
+    transform-origin: top left;
+    transform: rotate(-20deg);
     overflow-x: hidden;
+}
+header
+{
+    position:fixed;
+    bottom:4%;
+}
+nav ul{
+    margin:0;
+    padding:0;
+    list-style: none;
+    color:white;
+}
+nav li{
+    font-weight:600;
+    /* font-size:1.4rem; */
+    margin:2rem 0px;
+    transition:0.3s linear;
+    position:relative;
+    right:200px;
+}
+nav li:nth-of-type(2)
+{
+    transform:translateX(20px);
+    transition-delay: 0.1s;
+}
+nav li:nth-of-type(3)
+{
+    transform:translateX(40px);
+    transition-delay: 0.1s;
+}
+.come
+{
+    right:0px;
+}
+nav li i {
+    margin:0 10px;
 }
