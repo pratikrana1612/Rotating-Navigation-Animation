@@ -28,6 +28,7 @@ section{
     margin:0 auto;
     padding:3rem;
     width:70%;
+    max-width:940px;
     display:flex;
     flex-direction: column;
     justify-content: center;
