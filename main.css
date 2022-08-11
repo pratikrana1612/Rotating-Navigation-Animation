@@ -3,6 +3,10 @@
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
 }
+html
+{
+    overflow-x: hidden;
+}
 body{
     margin:0;
     padding:0;
@@ -150,4 +154,15 @@ nav li:nth-of-type(3)
 }
 nav li i {
     margin:0 10px;
+}
+@media (max-width:40rem)
+{
+    section{
+        padding:8rem 1rem 1rem 1rem;
+    }
+.big-div
+    {
+        padding:0rem;
+        width:100%;
+    }
 }
